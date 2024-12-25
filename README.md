@@ -1,2 +1,2 @@
 # ffcv
-Command-line File Format ConVerter
+A command-line **f**ile **f**ormat **c**on**v**erter.
