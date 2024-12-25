@@ -2,11 +2,14 @@ package app;
 
 import java.util.Arrays;
 
+import utils.TextIO;
+
 
 public class Launcher {
     
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(args));
+        var config = TextIO.toConfig(args);
+        System.out.println(config.getInputs());
     }
 }
 
