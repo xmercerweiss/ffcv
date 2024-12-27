@@ -26,7 +26,7 @@ public class TextIO {
             if (a.startsWith(OPT_SEP)) {
                 for (int i = 1; i < a.length(); i++) 
                     options.add(a.substring(i, i+1));
-                args.remove(a);
+                //args.remove(a);
             }   
         return new ArrayList<>(options);
     }

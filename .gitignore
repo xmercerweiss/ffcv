@@ -1,5 +1,9 @@
-# Ignore Gradle project-specific cache directory
+# Ignore Gradle specific directories
 .gradle
-
-# Ignore Gradle build output directory
 build
+
+# Ignore user-specific .idea contents
+workspace.xml
+usage.statistics.xml
+/shelf
+
