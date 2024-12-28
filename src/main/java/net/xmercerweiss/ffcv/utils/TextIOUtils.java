@@ -10,10 +10,13 @@ import java.util.*;
  * @author Xavier Mercerweiss
  * @version 0.1
  */
-public class TextIO {
+public final class TextIOUtils {
 
     private static final String EXT_SEP = ".";
     private static final String OPT_SEP = "-";
+
+    // Private constructor used to prevent instantiation
+    private TextIOUtils() {}
 
     /**
      * Converts an array of command line arguments into a set of

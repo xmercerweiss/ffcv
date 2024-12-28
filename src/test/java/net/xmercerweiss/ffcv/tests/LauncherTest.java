@@ -1,4 +1,6 @@
 package net.xmercerweiss.ffcv.tests;
 
-public class FileProcessorTester {
+public class LauncherTest {
+
+
 }

@@ -8,5 +8,7 @@ package net.xmercerweiss.ffcv.app;
  * @version 0.1
  */
 public enum Flag {
-
+    FORCE,
+    VERBOSE,
+    QUIET
 }

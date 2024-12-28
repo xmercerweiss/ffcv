@@ -1,4 +1,4 @@
 package net.xmercerweiss.ffcv.tests;
 
-public class FlaggerTester {
+public class FileRegistrarTest {
 }

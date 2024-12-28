@@ -7,7 +7,7 @@ import java.util.*;
  * program. Given a {@link net.xmercerweiss.ffcv.app.FileRegistrar} and
  * a set of conversion rules (given as a Map), the processor maps each
  * file to a format for conversion, prompts the user to resolve conflicts,
- * then instructs FileIO to perform each conversion.
+ * then instructs FileIOUtils to perform each conversion.
  *
  * @author Xavier Mercerweiss
  * @version 0.1
@@ -26,7 +26,7 @@ public class FileProcessor {
 
     /**
      * Maps each registered file to a file format to be converted to, then
-     * instructs FileIO perform this conversion. Prompts the user to resolve
+     * instructs FileIOUtils perform this conversion. Prompts the user to resolve
      * conflicts.
      *
      * @param ruleset a map of regexes for file extensions to a new format

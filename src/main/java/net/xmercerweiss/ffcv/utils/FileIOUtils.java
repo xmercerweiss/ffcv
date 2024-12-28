@@ -6,7 +6,10 @@ package net.xmercerweiss.ffcv.utils;
  * {@link net.xmercerweiss.ffcv.app.FileRegistrar} and
  * {@link net.xmercerweiss.ffcv.app.FileProcessor} classes.
  */
-public class FileIO {
+public final class FileIOUtils {
+
+    // Private constructor used to prevent instantiation
+    private FileIOUtils() {}
 
     /**
      * If possible, converts the file of the given path

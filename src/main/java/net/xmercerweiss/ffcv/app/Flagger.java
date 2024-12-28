@@ -1,5 +1,7 @@
 package net.xmercerweiss.ffcv.app;
 
+import java.util.*;
+
 /**
  * The flagger is a singleton object responsible for
  * storing the boolean state of various options passed
@@ -11,12 +13,25 @@ package net.xmercerweiss.ffcv.app;
  */
 public class Flagger {
 
+    private static Flagger instance = null;
+
+    private final HashMap<Flag,Boolean> values = new HashMap<>();
+
+    private Flagger() {
+        for (Flag f : Flag.values())
+            values.put(f, false);
+    }
+
     /**
      * If no Flagger instance exists, creates one.
-     * Otherwise, does nothing.
+     * Otherwise, returns the existing instance.
+     * @return a Flagger instance
      */
-    public static void instantiate() {
-
+    public static Flagger instantiate() {
+        if (instance == null) {
+            instance = new Flagger();
+        }
+        return instance;
     }
 
     /**
@@ -25,8 +40,8 @@ public class Flagger {
      * @param flag a flag enum
      * @return the boolean state of the given flag
      */
-    public static boolean getFlag(Flag flag) {
-        return false;
+    public boolean getFlag(Flag flag) {
+        return values.get(flag);
     }
 
     /**
@@ -34,7 +49,7 @@ public class Flagger {
      * @param flag a flag enum
      * @param value a boolean value
      */
-    public static void setFlag(Flag flag, boolean value) {
-
+    public void setFlag(Flag flag, boolean value) {
+        values.put(flag, value);
     }
 }
